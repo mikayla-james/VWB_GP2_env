@@ -1,13 +1,10 @@
 {
-    "name": "VWB_GP2_env",
-    "build": {
-        // Path is relative to the devcontainer.json file.
-        "dockerfile": "Dockerfile"
-    },
-    "service": "app",
-    "shutdownAction": "none",
-    "workspaceFolder": "/workspace",
-    "postCreateCommand": [
+  "name": "Custom Workbench JupyterLab devcontainer template",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "app",
+  "shutdownAction": "none",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": [
     "./startupscript/post-startup.sh",
     "jupyter",
     "/home/jupyter",
