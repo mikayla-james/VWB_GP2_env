@@ -1,9 +1,12 @@
 version: "2.4"
 services:
+  devcontainer:
+    build: 
+      context: .
+      dockerfile: Dockerfile
   app:
     container_name: "application-server"
-    build: context: .
-          "dockerfile": "Dockerfile"
+    image: "${templateOption:containerImage}"
     user: "jupyter"
     restart: always
     volumes:
