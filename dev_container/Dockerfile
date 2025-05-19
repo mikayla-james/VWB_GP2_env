@@ -74,7 +74,7 @@ RUN Rscript -e "install.packages('remotes', repos='https://cloud.r-project.org')
     Rscript -e "remotes::install_github('weizhouUMICH/SAIGE')"
 
 # Install GenoML
-RUN pip3 install genoml
+RUN pip3 install genoml2
 
 # Set PATH
 ENV PATH="${PLINK2_INSTALL_DIR}:${PLINK1_INSTALL_DIR}:/opt/rvtests/executables:/usr/local/bin:${PATH}"
