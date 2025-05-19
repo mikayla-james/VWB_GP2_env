@@ -1,8 +1,6 @@
 {
     "name": "VWB_GP2_env",
-    "build": {
-        // Path is relative to the devcontainer.json file.
-        "dockerfile": "Dockerfile"
+    "build": {"dockerfile": "Dockerfile"
     },
     "service": "app",
     "shutdownAction": "none",
